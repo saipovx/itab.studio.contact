@@ -1,0 +1,47 @@
+// Container & Breakpoints
+@use 'sass:math';
+$containerWidth: 1135;
+$containerPadding: 30;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1450: 1449.98 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint770: 769.98 + px;
+$breakpoint560: 559.98 + px;
+$breakpoint480: 479.98 + px;
+$breakpoint375: 374.98 + px;
+$breakpoint300: 299.98 + px;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint770;
+$burgerColor: 'black';
+$burgerActiveColor: 'black';
+
+// Fonts
+$fontMain: sans-serif;
+$fontSecondary: '';
+
+
+@font-face {
+	font-family: 'Soyuz Grotesk'; 
+    font-style: normal;
+    font-weight: 700;
+    src: 
+          url('../fonts/soyuz_grotesk_bold-webfont.woff') format('woff'),
+          url('../fonts/soyuz_grotesk_bold-webfont.woff2') format('woff2');
+  }
+
+
+
+  @font-face {
+    font-family: 'Street Soul Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+
+    src: local("Street Soul Cyrillic Regular"),
+
+    url("../fonts/streetsoulcyrillic_regular-webfont.woff") format("woff"),
+    url("../fonts/streetsoulcyrillic_regular-webfont.woff2") format("woff2");
+  }
+
+  

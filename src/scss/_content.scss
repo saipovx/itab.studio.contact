@@ -1,0 +1,260 @@
+.section__contact{
+
+    padding: 100px 0px;
+
+    @media (max-width: $breakpoint992) {
+        padding: 80px 0px;
+    }
+
+    .contact{
+
+        &__title{
+
+            font-family: 'Soyuz Grotesk';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            letter-spacing: 0.025em;
+            color: #000000;
+            z-index: 10;
+    
+            @media (max-width: $breakpoint1200) {
+                font-size: 55px;
+                line-height: 60px;
+            }
+    
+            @media (max-width: $breakpoint770) {
+                font-size: 34px;
+                line-height: 140%;
+            }
+    
+            @media (max-width: $breakpoint480) {
+                flex-wrap: wrap;
+                line-height: 40px;
+                font-size: 27px;
+            }
+
+            &-span{
+
+                font-family: 'Street Soul Cyrillic', arial;
+                color: #75FB5E;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 150px;
+                line-height: 10px; 
+                letter-spacing: 0.015em;  
+                margin-right: 0px;
+                margin-left: 5px;
+                transform: translateY(30%);
+
+                margin-left: 10px;
+  
+                @media (max-width: $breakpoint1200) {
+                  font-size: 80px;
+                  
+                }
+
+                @media (max-width: $breakpoint770) {
+                    font-size: 50px;
+                    margin-right: 2px;     
+                }
+    
+                @media (max-width: $breakpoint480) {
+                    font-size: 50px;
+                    margin-right: 2px;
+                    
+                }
+
+            }
+
+
+
+
+        }
+
+        &__text{
+            
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: -1.2px;
+            margin-top: 60px;            
+            color: #141414;
+
+            @media (max-width: $breakpoint770) {
+                font-size: 22px;  
+                margin-top: 25px;  
+            }
+
+
+        }
+
+        &__type{
+
+            margin-top: 45px ;
+
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: $breakpoint560) {
+                margin-top: 25px;
+            }
+
+            &-text{
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: -1.2px;            
+                color: #141414;
+                margin-top: 25px;
+    
+                @media (max-width: $breakpoint770) {
+                    font-size: 22px; 
+                }
+
+            }
+
+            &-buttons{
+                display: flex;
+                align-items: center;
+                gap: 13px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                
+
+                @media (max-width: $breakpoint1200) {
+                    justify-content: flex-start;
+                }
+
+
+
+
+                &-btn{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: -0.5px;
+                    color: #828282;
+                    padding: 8px 0px;
+                    background-color: #00000000;
+                    border: 1px solid #838383;
+                    transition: all ease .3s;
+                    white-space: nowrap;
+                    max-width: 177px;
+                    width: 100%;
+
+                    &:hover{
+                        color: #75FB5E;
+                        border: 1px solid #75FB5E;
+                    }
+
+                    @media (max-width: $breakpoint770) {
+                        flex: 0 1 48%;
+                        max-width: 100%;
+                        width: 100%;
+
+                        padding: 10px 0px;
+                        font-size: 22px;
+
+                    }
+
+                     
+
+                }
+
+            }
+
+            &-subtitle{
+                max-width: 760px;
+                width: 100%;
+                min-height: 224px;
+                border: 1px solid #838383;
+                margin-top: 20px;
+                padding: 33px;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.5px;
+                color: #828282;
+
+                @media (max-width: $breakpoint770) {
+                    padding: 5px 20px;
+                    font-size: 22px;
+                }
+
+                &::placeholder{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: -0.5px;
+                    color: #828282; 
+
+                    @media (max-width: $breakpoint770) {
+                        font-size: 22px;
+                    }
+
+                }
+
+            }
+
+            &-footer{
+                display: flex;
+                align-items: center;
+                gap: 23px;
+
+                margin-top: 80px;
+
+        @media (max-width: $breakpoint560) {
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                    gap: 18px;
+                    margin-top: 50px;
+                }
+
+                &-info{
+
+                    display: flex;
+                    flex-direction: column;
+                    
+                    &-hr{
+                        max-width: 172px;
+                        width: 100%;
+                        border: 1px solid #757575;
+                    }
+
+                    &-text{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        letter-spacing: -0.5px;
+                        color: #828282;
+                        max-width: 380px;
+                    }
+
+                }
+
+            }
+
+           
+
+        }
+
+
+
+    }
+
+
+}
